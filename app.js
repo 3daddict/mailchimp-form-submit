@@ -14,7 +14,7 @@ function ajaxCall() {
         //MailChimp URL
         //**NOTE**
         //url must send post-json not post
-        //add c=? at end for jsonp submittion
+        //add &c=? at end for jsonp submittion
         url: `${MC_URL};id=${MC_ID}&c=?`,
         data: $('#mailChimpForm').serialize(),
         dataType: 'jsonp'
