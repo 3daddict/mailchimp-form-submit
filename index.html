@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MailChimp Form Submit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section class="container-fluid">
+        <form id="mailChimpForm" autocomplete="off">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstNameInput">First Name</label>
+                    <!-- name attribute must match mailchimp form -->
+                    <input type="text" class="form-control" name="FNAME" id="firstNameInput" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastNameInput">Last Name</label>
+                    <!-- name attribute must match mailchimp form -->
+                    <input type="text" class="form-control" name="LNAME" id="lastNameInput" placeholder="Last Name">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="emailInput">Email</label>
+                    <!-- name attribute must match mailchimp form -->
+                    <input type="email" class="form-control" name="EMAIL" id="emailInput" placeholder="Email">
+                </div>
+            </div>
+    
+            <button type="submit" class="btn btn-primary float-right">Submit Form</button>
+        </form>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
